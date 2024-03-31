@@ -14,6 +14,7 @@ with st.sidebar:
 prompt = st.text_input("Prompt", label_visibility="collapsed")
 
 os.environ["GROQ_API_KEY"] = groq_api_key
+print(groq_api_key)
 client = Groq(api_key=groq_api_key)
 
 # If Generate button is clicked
